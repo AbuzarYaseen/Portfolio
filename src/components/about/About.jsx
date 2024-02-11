@@ -15,7 +15,7 @@ const About = () => {
           <img src={profile} height={250} width={250} />
         </div>
 
-        <div className="row-span-1 text-center text-[18px] p-6 mx-16">
+        <div className="row-span-1 text-center text-[18px] p-6 md:mx-16">
           As a versatile developer with expertise spanning React.js, JavaScript,
           HTML, CSS, Bootstrap, Tailwind CSS, Flutter, Dart, and Firebase, I
           bring a wealth of experience and passion to every project I undertake.
