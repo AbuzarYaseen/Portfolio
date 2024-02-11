@@ -4,8 +4,8 @@ const Experience = () => {
   return (
     <section id="experience" className="my-6 ">
       <div className="grid justify-center ">
-        <h1 className="text-center font-rounded-tl-3xl rounded-br-3xlextrabold text-[32px] mt-10 mb-12 py-2 px-4 text-black border border-blue-600 w-fit ">
-          My Experience
+        <h1 className="text-center font-extrabold text-[32px] mt-10 mb-12 py-2 px-4 text-black border border-blue-600 w-fit rounded-tl-3xl rounded-br-3xl">
+          Experience
         </h1>
       </div>
       <div className="   my-8 p-6 sm:mx-16 mx-5">
