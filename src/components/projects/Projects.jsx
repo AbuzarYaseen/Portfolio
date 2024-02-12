@@ -1,6 +1,12 @@
 import React from "react";
 
 const Projects = () => {
+  const megaMart = "https://mega-mart-qkjs.vercel.app/";
+  const flagProject = "https://flag-project-delta.vercel.app/";
+  const DxO = "https://dx-o-shop-e-books.vercel.app/";
+  const BMI = "https://github.com/AbuzarYaseen/BMI-Calculator";
+  const weatherApp = "https://github.com/AbuzarYaseen/weather-app";
+
   return (
     <section id="projects" className="my-6 ">
       <div className="grid justify-center text-center">
@@ -8,27 +14,42 @@ const Projects = () => {
           My Projects
         </h1>
       </div>
-      <div className="grid lg:grid-cols-5  text-center grid-rows-1 gap-5 mx-16 lg:gap-2 lg:h-20">
-        <div className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-blue-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer">
+      <ul className="grid lg:grid-cols-5  text-center grid-rows-1 gap-5 mx-16 lg:gap-2 lg:h-20">
+        <li
+          className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-blue-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
+          onClick={() => window.open(megaMart, "_blank")}
+        >
           Mega Mart
-        </div>
+        </li>
 
-        <div className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-blue-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer">
+        <li
+          className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-blue-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
+          onClick={() => window.open(flagProject, "_blank")}
+        >
           Flag Project
-        </div>
+        </li>
 
-        <div className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-gray-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer">
+        <li
+          className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-gray-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
+          onClick={() => window.open(DxO, "_blank")}
+        >
           DxO Shop
-        </div>
+        </li>
 
-        <div className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-blue-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer">
+        <li
+          className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-blue-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
+          onClick={() => window.open(BMI, "_blank")}
+        >
           BMI Calculator
-        </div>
+        </li>
 
-        <div className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-gray-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer">
+        <li
+          className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-gray-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
+          onClick={() => window.open(weatherApp, "_blank")}
+        >
           Weather App
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
   );
 };

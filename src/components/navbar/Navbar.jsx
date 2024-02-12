@@ -11,6 +11,8 @@ const Navbar = () => {
   };
 
   const linkedInLink = "https://www.linkedin.com/in/abuzar-yaseen/";
+  const cv =
+    "https://drive.google.com/file/d/1dLrtmP6UbnOMchD2vTQjl49PZl2APJ1N/view?usp=sharing";
 
   return (
     <>
@@ -64,6 +66,18 @@ const Navbar = () => {
             <span className="text-center lg:px-2 font-bold px-4 lg:text-lg text-sm">
               Connect
             </span>
+          </li>
+
+          <li
+            onClick={() => window.open(cv, "_blank")}
+            className="flex hover: cursor-pointer px-6 lg:px-0 py-2 lg:py-0 sm:hidden lg:flex"
+          >
+            <button
+              type="button"
+              className="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bg-blue-600 hover:bg-black    lg:py-0"
+            >
+              Download My Resume
+            </button>
           </li>
         </ul>
       </nav>

@@ -3,6 +3,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 
 const Contact = () => {
+  const WhatsApp = "https://web.whatsapp.com/";
+
   return (
     <section id="contact" className="my-4 h-full w-full">
       <div className="grid justify-center">
@@ -38,13 +40,16 @@ const Contact = () => {
               </div>
             </div>
             <div className="mb-8 flex w-full max-w-[370px] ">
-              <div className="w-full">
-                <h4 className="mb-1 text-xl font-bold text-dark flex gap-2 items-center">
-                  {" "}
-                  <FaWhatsapp />
-                  WhatsApp
-                </h4>
-                <p className="text-base text-body-color">+92 305 4664830</p>
+              <div className="w-full cursor-pointer hover:font-bold hover:text-blue-500">
+                <ul onClick={() => window.open(WhatsApp, "_blank")}>
+                  <h4 className="mb-1 text-xl font-bold text-dark flex gap-2 items-center">
+                    {" "}
+                    <FaWhatsapp />
+                    WhatsApp
+                  </h4>
+
+                  <p className="text-base text-body-color">+92 305 4664830</p>
+                </ul>
               </div>
             </div>
           </div>
