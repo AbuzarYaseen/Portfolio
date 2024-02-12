@@ -30,7 +30,7 @@ const Projects = () => {
         </li>
 
         <li
-          className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-gray-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
+          className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-blue-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
           onClick={() => window.open(DxO, "_blank")}
         >
           DxO Shop
@@ -44,7 +44,7 @@ const Projects = () => {
         </li>
 
         <li
-          className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-gray-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
+          className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-blue-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
           onClick={() => window.open(weatherApp, "_blank")}
         >
           Weather App

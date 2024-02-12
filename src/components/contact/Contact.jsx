@@ -1,8 +1,96 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
-
+import Swal from "sweetalert2";
+import axios from "axios";
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let formValid = true;
+    const newErrors = {
+      name: "",
+      email: "",
+      message: "",
+    };
+
+    if (formData.name.trim() === "") {
+      formValid = false;
+      newErrors.name = "Name is required";
+    }
+
+    if (formData.email.trim() === "") {
+      formValid = false;
+      newErrors.email = "Email is required";
+    } else if (
+      !/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(formData.email)
+    ) {
+      formValid = false;
+      newErrors.email = "Invalid email format";
+    }
+
+    if (formData.message.trim() === "") {
+      formValid = false;
+      newErrors.message = "Message is required";
+    }
+
+    if (formValid) {
+      // Submit the form or perform other actions here
+    } else {
+      setErrors(newErrors);
+    }
+  };
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+  const sub = () => {
+    axios
+      .post(
+        "https://getform.io/f/66ff5751-f621-457f-8066-bb3869ef380e",
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        { headers: { Accept: "application/json" } }
+      )
+      .then((response) => {
+        if (response.status === 200) {
+          Swal.fire("Success!", "Form has been submitted", "success").then(
+            () => {
+              resetForm();
+              window.location.reload();
+            }
+          );
+        }
+      })
+      .catch((error) => console.error(error));
+  };
+
   const WhatsApp = "https://web.whatsapp.com/";
 
   return (
@@ -56,6 +144,9 @@ const Contact = () => {
         </div>
         <div className=" md:mt-10 mt-0">
           <form
+            action="https://getform.io/f/66ff5751-f621-457f-8066-bb3869ef380e"
+            method="POST"
+            onSubmit={handleSubmit}
             className="w-full mt-20 px-8   py-10 
               bg-clip-padding backdrop-blur-sm bg-opacity-10 bg-blue-300 shadow-xl shadow-blue-700 rounded-lg"
           >
@@ -70,6 +161,8 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
+                onChange={handleChange}
+                required
                 className="mt-1 p-2 border w-full rounded-md"
               />
             </div>
@@ -84,6 +177,8 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
+                onChange={handleChange}
+                required
                 className="mt-1 p-2 border w-full rounded-md"
               />
             </div>
@@ -97,6 +192,8 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
+                onChange={handleChange}
+                required
                 rows="4"
                 className="mt-1 p-2 border w-full rounded-md"
               ></textarea>
@@ -104,6 +201,7 @@ const Contact = () => {
             <div className="grid justify-center">
               <button
                 type="submit"
+                onClick={sub}
                 className="bg-[#050a13] text-white px-4 py-2 rounded-tl-3xl rounded-br-3xl hover:bg-blue-600"
               >
                 Send Message
