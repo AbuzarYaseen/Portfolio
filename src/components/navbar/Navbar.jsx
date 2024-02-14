@@ -74,7 +74,7 @@ const Navbar = () => {
           >
             <button
               type="button"
-              className="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bg-blue-600 hover:bg-black lg:py-0 zoom-image hover:scale-110 transition duration-300 ease-in-out"
+              className="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bg-blue-600 hover:bg-black hover:text-sky-300 lg:py-0 zoom-image hover:scale-110 transition duration-300 ease-in-out"
             >
               Download My Resume
             </button>
