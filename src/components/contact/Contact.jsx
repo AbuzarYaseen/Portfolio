@@ -117,18 +117,23 @@ const Contact = () => {
               provided or any of the alternative contact options available.
             </p>
             <div className="mb-8 flex w-full max-w-[370px] ">
-              <div className="w-full">
-                <h4 className="mb-1 text-xl font-bold text-dark flex gap-2 items-center">
-                  <SiMinutemailer />
-                  Email Address
-                </h4>
-                <p className="text-base text-body-color">
-                  abuzaryaseen88@gmail.com
-                </p>
+              <div className="mb-8 flex w-full max-w-[370px] ">
+                <a
+                  href="mailto:abuzaryaseen88@gmail.com"
+                  className="w-full hover:text-blue-500 zoom-image hover:scale-110 transition duration-300 ease-in-out cursor-pointer"
+                >
+                  <h4 className="mb-1 text-xl font-bold text-dark flex gap-2 items-center ">
+                    <SiMinutemailer />
+                    Email Address
+                  </h4>
+                  <p className="text-base text-body-color">
+                    abuzaryaseen88@gmail.com
+                  </p>
+                </a>
               </div>
             </div>
             <div className="mb-8 flex w-full max-w-[370px] ">
-              <div className="w-full cursor-pointer hover:font-bold hover:text-blue-500">
+              <div className="w-full cursor-pointer hover:font-bold hover:text-blue-500 zoom-image hover:scale-110 transition duration-300 ease-in-out ">
                 <ul onClick={() => window.open(WhatsApp, "_blank")}>
                   <h4 className="mb-1 text-xl font-bold text-dark flex gap-2 items-center">
                     {" "}

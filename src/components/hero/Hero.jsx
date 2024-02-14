@@ -10,9 +10,9 @@ const Hero = () => {
             Hi! I am
           </h1>
           <p className="flex flex-col justify-center items-center bg-cover bg-clip-text bg-center uppercase  lg:text-7xl text-[19px] lg:text-left font-extrabold my-4  animate__animated animate__slideInLeft">
-            <span className="text-sky-500">Abuzar Yaseen</span>
+            <span className="text-sky-500 zoom-image hover:scale-110 transition duration-300 ease-in-out">Abuzar Yaseen</span>
           </p>
-          <p className="lg:text-left text-center font-extrabold text-[12px] animate__animated animate__fadeInUpBig sm:text-[20px]">
+          <p className="lg:text-left text-center font-extrabold text-[12px] animate__animated animate__fadeInUpBig sm:text-[20px] ">
             A Frontend Web Developer
           </p>
         </div>
@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="flex justify-center   lg:w-full lg:h-full lg:grid ">
             <img
               src={profile}
-              className="h-[80%] self-center rounded-lg"
+              className="h-[80%] self-center rounded-lg zoom-image hover:scale-110 transition duration-300 ease-in-out"
               alt="Profile Picture"
             />
           </div>
