@@ -16,11 +16,11 @@ const About = () => {
         </div>
 
         <div className="row-span-1 text-center text-[18px] p-6 md:mx-16">
-          As a versatile developer with expertise spanning React.js, JavaScript,
-          HTML, CSS, Bootstrap, Tailwind CSS, Flutter, Dart, and Firebase, I
-          bring a wealth of experience and passion to every project I undertake.
-          With a solid foundation in front-end, I thrive on creating seamless
-          user experiences and robust, scalable solutions. Whether it's crafting
+          As a versatile developer with expertise spanning React.js, Next.js,
+          JavaScript, HTML, CSS, Bootstrap, Tailwind CSS, and Firebase, I bring
+          a wealth of experience and passion to every project I undertake. With
+          a solid foundation in front-end, I thrive on creating seamless user
+          experiences and robust, scalable solutions. Whether it's crafting
           pixel-perfect designs, optimizing database performance, or
           architecting complex applications, I approach each challenge with
           creativity, attention to detail, and a relentless drive for
