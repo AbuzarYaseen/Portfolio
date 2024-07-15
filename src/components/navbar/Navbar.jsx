@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const linkedInLink = "https://www.linkedin.com/in/abuzar-yaseen/";
   const cv =
-    "https://drive.google.com/file/d/1dBfGRbMlzL7xCXFpZjiNH_na7fgRL5s1/view?usp=drive_link";
+    "https://drive.google.com/file/d/1gM6ZwBBT0T9_pxtJ3gq5b8MnRgbDJtrY/view?usp=sharing";
 
   return (
     <>
