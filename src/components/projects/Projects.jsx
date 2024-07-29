@@ -15,7 +15,7 @@ const Projects = () => {
           My Projects
         </h1>
       </div>
-      <ul className="grid lg:grid-cols-5  text-center grid-rows-1 gap-5 mx-16 lg:gap-2 lg:h-20">
+      <ul className="grid lg:grid-cols-6  text-center grid-rows-1 gap-5 mx-16 lg:gap-2 lg:h-20">
         <li
           className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-blue-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
           onClick={() => window.open(megaMart, "_blank")}
