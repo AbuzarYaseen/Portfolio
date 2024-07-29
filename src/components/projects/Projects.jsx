@@ -6,6 +6,7 @@ const Projects = () => {
   const DxO = "https://dx-o-shop-e-books.vercel.app/";
   const BMI = "https://github.com/AbuzarYaseen/BMI-Calculator";
   const weatherApp = "https://github.com/AbuzarYaseen/weather-app";
+  const blogSite = "https://blogs-app-rosy.vercel.app/";
 
   return (
     <section id="projects" className="my-6 ">
@@ -27,6 +28,13 @@ const Projects = () => {
           onClick={() => window.open(flagProject, "_blank")}
         >
           Flag Project
+        </li>
+
+        <li
+          className="col-span-1 font-bold border-blue-600 px-3 border-4 rounded-tl-3xl rounded-br-3xl h-full w-full bg-blue-400 bg-clip-padding backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center items-center flex justify-center shadow-2xl shadow-blue-500/20 py-2 cursor-pointer"
+          onClick={() => window.open(blogSite, "_blank")}
+        >
+          Blog App
         </li>
 
         <li
